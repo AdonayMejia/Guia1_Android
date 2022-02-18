@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    
+     int cantNumero, num, pares=0, impares=0;
+    System.out.print("Cuantos numeros desea ingresar: ");
+    Scanner teclado = new Scanner(System.in);
+    cantNumero = teclado.nextInt();
+    
+    for(int i=1; i<=cantNumero; i++){
+     System.out.print("Ingresar numero " + i + " de " + cantNumero + ": ");
+      num = (new Scanner(System.in)).nextInt();
+       if(num%2 == 0)
+         pares++;
+       else
+         impares++; 
+         }
+         
+    System.out.println("\nCantidad de numeros pares: " + pares);
+    System.out.println("Cantidad de numeros impares: " + impares);
+  }
+}
